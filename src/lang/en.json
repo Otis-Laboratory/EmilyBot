@@ -3,17 +3,19 @@
 		"cooldownMessage": "`{name}` is on cooldown for {time} more seconds.",
 		"connectedToDB": "Connected to MongoDB!",
 		"errorMessage": "There was an error while executing that command.",
-    "noBotToken": "There is not a DISCORD_TOKEN in the .env file or it is incorrect. Please try again!"
+		"noBotToken": "There is not a DISCORD_TOKEN in the .env file or it is incorrect. Please try again!"
 	},
 	"language": {
-    "description": "Change the language that Emily uses in your server.",
-    "response": "The language for this server has been set to `{lang}`."
-  },
+		"description": "Change the language that Emily uses in your server.",
+		"response": "The language for this server has been set to `{lang}`."
+	},
 	"pat": {
 		"description": "Pat someone who needs it :)",
 		"option1": "The user you want to give a pat to.",
-		"userNotExist": "<@{pattedId}> doesn't appear to be in the server, or another error occurred.",
-		"response": "<@{patterId}>** gave **<@{pattedId}> **a pat!**"
+		"userNotExist": "<@{victim}> doesn't appear to be in the server, or another error occurred.",
+		"cantpatBot": "Ahh! You can't pat me! D:",
+		"cantpatYourself": "Aww... I think <@{executor}> needs some pats...",
+		"response": "<@{executor}>** gave **<@{victim}> **a pat!**"
 	},
 	"ping": {
 		"description": "Pong! Test Emily's response time and make sure she's online.",

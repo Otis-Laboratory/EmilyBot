@@ -20,6 +20,7 @@ import { i18n } from "../utils/i18n";
 import { MongoClient, ServerApiVersion, Db } from "mongodb";
 
 export let emilyDb:Db;
+export const emilyId = process.env.DISCORD_CLIENT_ID
 
 export class EmilyBot {
   public slashCommands = new Array<ApplicationCommandDataResolvable>();

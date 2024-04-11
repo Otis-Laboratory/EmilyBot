@@ -1,9 +1,14 @@
 {
 	"common": {
 		"cooldownMessage": "`{name}` is on cooldown for {time} more seconds.",
+		"connectedToDB": "Connected to MongoDB!",
 		"errorMessage": "There was an error while executing that command.",
     "noBotToken": "There is not a DISCORD_TOKEN in the .env file or it is incorrect. Please try again!"
 	},
+	"language": {
+    "description": "Change the language that Emily uses in your server.",
+    "response": "The language for this server has been set to `{lang}`."
+  },
 	"ping": {
 		"description": "Pong! Test Emily's response time and make sure she's online.",
 		"response": "Pong!\nResponse time: {ping}ms"

@@ -17,6 +17,9 @@ import { IPermissionCheckResult } from "../interfaces/IPermissionCheckResult";
 import { checkPermissions } from "../utils/checkPermissions";
 import { MissingPermissionException } from "./MissingPermissionsException";
 import { i18n } from "../utils/i18n";
+import { MongoClient, ServerApiVersion, Db } from "mongodb";
+
+export let emilyDb:Db;
 
 export class EmilyBot {
   public slashCommands = new Array<ApplicationCommandDataResolvable>();
@@ -29,6 +32,7 @@ export class EmilyBot {
     this.client.on(Events.ClientReady, (client) => {
       console.log(`${client.user.username} is ready!`);
 
+      this.connectMongo();
       this.registerSlashCommands();
     });
 
@@ -123,5 +127,23 @@ export class EmilyBot {
         }
       }
     });
+  }
+
+  private async connectMongo() {
+    const mongodbUrl = process.env.MONGODB_URL;
+  
+    if (!mongodbUrl || mongodbUrl === undefined) {
+      console.log("MongoDB URL not provided.");
+      return;
+    }
+  
+    try {
+      const mongoClient = new MongoClient(mongodbUrl);
+      await mongoClient.connect();
+      emilyDb = mongoClient.db(process.env.MONGODB_NAME);
+      console.log("Connected to MongoDB successfully!");
+    } catch (error) {
+      console.error("Error connecting to MongoDB:", error);
+    }
   }
 }

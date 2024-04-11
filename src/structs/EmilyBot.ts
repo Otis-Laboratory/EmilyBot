@@ -95,7 +95,7 @@ export class EmilyBot {
         if (now < expirationTime) {
           const timeLeft = (expirationTime - now) / 1000;
           return interaction.reply({
-            content: `Please wait ${timeLeft.toFixed(1)} before using ${interaction.commandName}`,
+            content: `Please wait ${timeLeft.toFixed(1)} seconds before using ${interaction.commandName}.`,
             ephemeral: true
           });
         }

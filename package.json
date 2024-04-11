@@ -1,0 +1,25 @@
+{
+  "author": "otisai <otis@otisai.dev>",
+  "name": "emilybot",
+  "version": "1.0.0",
+  "description": "Fully open-source multi-purpose Discord bot.",
+  "main": "src/index.ts",
+  "engines": {
+    "node": ">=16.11.0"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "start": "ts-node src/index.ts",
+    "build": "tsc --build"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2"
+  }
+}

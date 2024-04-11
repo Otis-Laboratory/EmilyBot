@@ -1,20 +1,26 @@
 {
 	"common": {
 		"cooldownMessage": "`{name}` is on cooldown for {time} more seconds.",
-		"connectedToDB": "¡Conectado a MongoDB!",
-		"errorMessage": "Hubo un error al ejecutar ese comando.",
-    "noBotToken": "No hay un DISCORD_TOKEN en el archivo .env o es incorrecto. ¡Inténtalo de nuevo!"
+		"connectedToDB": "Connected to MongoDB!",
+		"errorMessage": "There was an error while executing that command.",
+    "noBotToken": "There is not a DISCORD_TOKEN in the .env file or it is incorrect. Please try again!"
 	},
 	"language": {
-    "description": "Cambia el idioma que usa Emily en tu servidor.",
-    "response": "El idioma de este servidor se ha establecido en `{lang}`."
+    "description": "Change the language that Emily uses in your server.",
+    "response": "The language for this server has been set to `{lang}`."
   },
+	"pat": {
+		"description": "Pat someone who needs it :)",
+		"option1": "The user you want to give a pat to.",
+		"userNotExist": "<@{pattedId}> doesn't appear to be in the server, or another error occurred.",
+		"response": "<@{patterId}>** gave **<@{pattedId}> **a pat!**"
+	},
 	"ping": {
-		"description": "¡Apestar! Pruebe el tiempo de respuesta de Emily y asegúrese de que esté en línea.",
-		"response": "¡Pong!\nTiempo de respuesta: {ping}ms"
+		"description": "Pong! Test Emily's response time and make sure she's online.",
+		"response": "Pong!\nResponse time: {ping}ms"
 	},
 	"uptime": {
-		"description": "Vea cuánto tiempo ha estado Emily en línea.",
-		"response": "Tiempo de actividad: `{days} día(s), {hours} hora(s), {minutes} minuto(s), {seconds} segundo(s)`"
+		"description": "See how long Emily has been online.",
+		"response": "Uptime: `{days} day(s), {hours} hour(s), {minutes} minute(s), {seconds} second(s)`"
 	}
 }

@@ -9,6 +9,11 @@
     "description": "Ändern Sie die Sprache, die Emily auf Ihrem Server verwendet.",
     "response": "Die Sprache für diesen Server wurde auf `{lang}` eingestellt."
   },
+	"pat": {
+		"description": "Streichle jemanden, der es braucht :)",
+		"option1": "Der Benutzer, den Sie streicheln möchten.",
+		"response": "<@patterId>** hat **<@{pattedId}> **einen Klaps gegeben!**"
+	},
 	"ping": {
 		"description": "Pong! Testen Sie Emilys Reaktionszeit und stellen Sie sicher, dass sie online ist.",
 		"response": "Pong!\nAntwortzeit: {ping}ms"

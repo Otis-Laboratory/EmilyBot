@@ -9,6 +9,10 @@
     "description": "",
     "response": ""
   },
+  "pat": {
+		"description": "",
+		"response": ""
+	},
   "ping": {
     "description": "",
     "response": ""

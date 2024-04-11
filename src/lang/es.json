@@ -1,20 +1,25 @@
 {
   "common": {
     "cooldownMessage": "`{name}` está en tiempo de reutilización durante `{time}` segundos más.",
-    "connectedToDB": "",
-    "errorMessage": "",
-    "noBotToken": ""
+    "connectedToDB": "¡Conectado a MongoDB!",
+		"errorMessage": "Hubo un error al ejecutar ese comando.",
+    "noBotToken": "No hay un DISCORD_TOKEN en el archivo .env o es incorrecto. ¡Inténtalo de nuevo!"
+	},
+	"language": {
+    "description": "Cambia el idioma que usa Emily en tu servidor.",
+    "response": "El idioma de este servidor se ha establecido en `{lang}`."
   },
-  "language": {
-    "description": "",
-    "response": ""
-  },
-  "ping": {
-    "description": "",
-    "response": ""
-  },
-  "uptime": {
-    "descriptinon": "",
-    "response": ""
-  }
+	"pat": {
+		"description": "Dale palmadita a alguien que lo necesite :)",
+		"option1": "El usuario al que quieres darle una palmadita.",
+		"response": "<@patterId>** le dio **<@{pattedId}> **¡una palmadita!**"
+	},
+	"ping": {
+		"description": "¡Apestar! Pruebe el tiempo de respuesta de Emily y asegúrese de que esté en línea.",
+		"response": "¡Pong!\nTiempo de respuesta: {ping}ms"
+	},
+	"uptime": {
+		"description": "Vea cuánto tiempo ha estado Emily en línea.",
+		"response": "Tiempo de actividad: `{days} día(s), {hours} hora(s), {minutes} minuto(s), {seconds} segundo(s)`"
+	}
 }

@@ -19,10 +19,6 @@ export default {
         content: i18n.__mf("ping.response", { ping: Math.round(interaction.client.ws.ping) }),
         ephemeral: true
       })
-      // .reply({
-      //   content: `Pong!\nResponse time: ${Math.round(interaction.client.ws.ping)}ms`,
-      //   ephemeral: true,
-      // })
       .catch(console.error);
   },
 };

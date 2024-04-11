@@ -30,6 +30,6 @@ i18n.configure({
   }
 });
 
-i18n.setLocale("en");
+i18n.setLocale(process.env.LOCALIZATION || "en");
 
 export { i18n };

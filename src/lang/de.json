@@ -1,0 +1,20 @@
+{
+	"common": {
+		"cooldownMessage": "`{name}` befindet sich noch `{time}` Sekunden lang in der Abklingzeit.",
+		"connectedToDB": "Verbunden mit MongoDB!",
+		"errorMessage": "TBeim Ausführen dieses Befehls ist ein Fehler aufgetreten.",
+    "noBotToken": "Die .env-Datei enthält kein DISCORD_TOKEN oder es ist falsch. Bitte versuche es erneut!"
+	},
+	"language": {
+    "description": "Ändern Sie die Sprache, die Emily auf Ihrem Server verwendet.",
+    "response": "Die Sprache für diesen Server wurde auf `{lang}` eingestellt."
+  },
+	"ping": {
+		"description": "Pong! Testen Sie Emilys Reaktionszeit und stellen Sie sicher, dass sie online ist.",
+		"response": "Pong!\nAntwortzeit: {ping}ms"
+	},
+	"uptime": {
+		"description": "Sehen Sie, wie lange Emily schon online ist.",
+		"response": "Betriebszeit: `{days} Tag(e), {hours} Stunde(n), {minutes} Minute(n), {seconds} Sekunde(n)`."
+	}
+}

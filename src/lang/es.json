@@ -1,0 +1,20 @@
+{
+  "common": {
+    "cooldownMessage": "`{name}` está en tiempo de reutilización durante `{time}` segundos más.",
+    "connectedToDB": "",
+    "errorMessage": "",
+    "noBotToken": ""
+  },
+  "language": {
+    "description": "",
+    "response": ""
+  },
+  "ping": {
+    "description": "",
+    "response": ""
+  },
+  "uptime": {
+    "descriptinon": "",
+    "response": ""
+  }
+}

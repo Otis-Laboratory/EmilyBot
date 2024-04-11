@@ -1,0 +1,15 @@
+{
+	"common": {
+		"cooldownMessage": "`{name}` is on cooldown for {time} more seconds.",
+		"errorMessage": "There was an error while executing that command.",
+    "noBotToken": "There is not a DISCORD_TOKEN in the .env file or it is incorrect. Please try again!"
+	},
+	"ping": {
+		"description": "Pong! Test Emily's response time and make sure she's online.",
+		"response": "Pong!\nResponse time: {ping}ms"
+	},
+	"uptime": {
+		"description": "See how long Emily has been online.",
+		"response": "Uptime: `{days} day(s), {hours} hour(s), {minutes} minute(s), {seconds} second(s)`"
+	}
+}

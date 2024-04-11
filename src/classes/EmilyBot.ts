@@ -16,6 +16,7 @@ import "dotenv/config";
 import { IPermissionCheckResult } from "../interfaces/IPermissionCheckResult";
 import { checkPermissions } from "../utils/checkPermissions";
 import { MissingPermissionException } from "./MissingPermissionsException";
+import { i18n } from "../utils/i18n";
 
 export class EmilyBot {
   public slashCommands = new Array<ApplicationCommandDataResolvable>();
@@ -44,7 +45,7 @@ export class EmilyBot {
 
   private async registerSlashCommands() {
     if (!process.env.DISCORD_TOKEN) {
-      console.log("There is no Discord token set in the environment file! Please add a token and try again.");
+      console.log(i18n.__("common.noBotToken"));
     } else {
       const rest = new REST({ version: "9" }).setToken(
         process.env.DISCORD_TOKEN
@@ -95,7 +96,7 @@ export class EmilyBot {
         if (now < expirationTime) {
           const timeLeft = (expirationTime - now) / 1000;
           return interaction.reply({
-            content: `Please wait ${timeLeft.toFixed(1)} seconds before using ${interaction.commandName}.`,
+            content: i18n.__mf("common.cooldownMessage", { time: timeLeft.toFixed(1), name: interaction.commandName }),
             ephemeral: true
           });
         }

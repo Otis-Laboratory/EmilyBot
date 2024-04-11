@@ -1,0 +1,15 @@
+{
+  "common": {
+    "cooldownMessage": "",
+    "errorMessage": "",
+    "noBotToken": ""
+  },
+  "ping": {
+    "description": "",
+    "response": ""
+  },
+  "uptime": {
+    "descriptinon": "",
+    "response": ""
+  }
+}

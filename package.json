@@ -14,9 +14,11 @@
   },
   "dependencies": {
     "discord.js": "^14.14.1",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "i18n": "^0.15.1"
   },
   "devDependencies": {
+    "@types/i18n": "^0.13.10",
     "@types/node": "^20.12.7",
     "nodemon": "^3.1.0",
     "prettier": "^3.2.5",

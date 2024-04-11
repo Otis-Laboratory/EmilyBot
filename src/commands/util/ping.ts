@@ -1,11 +1,28 @@
-import { ChatInputCommandInteraction, EmbedBuilder, SlashCommandBuilder } from "discord.js";
+import {
+  ChatInputCommandInteraction,
+  EmbedBuilder,
+  SlashCommandBuilder,
+} from "discord.js";
+import { i18n } from "../../utils/i18n";
 
 export default {
   cooldown: 10,
   data: new SlashCommandBuilder()
+    .setDMPermission(true)
     .setName("ping")
-    .setDescription("Pong! Test Emily's response time and make sure she's online."),
-  async execute (interaction: ChatInputCommandInteraction) {
-    await interaction.reply({ content: `Pong!\nResponse time: ${Math.round(interaction.client.ws.ping)}ms`, ephemeral: true }).catch(console.error);
-  }
-}
+    .setDescription(
+      i18n.__("ping.description")
+    ),
+  async execute(interaction: ChatInputCommandInteraction) {
+    await interaction
+      .reply({
+        content: i18n.__mf("ping.response", { ping: Math.round(interaction.client.ws.ping) }),
+        ephemeral: true
+      })
+      // .reply({
+      //   content: `Pong!\nResponse time: ${Math.round(interaction.client.ws.ping)}ms`,
+      //   ephemeral: true,
+      // })
+      .catch(console.error);
+  },
+};

@@ -2,17 +2,16 @@
 	"common": {
 		"cooldownMessage": "`{name}` befindet sich noch `{time}` Sekunden lang in der Abklingzeit.",
 		"connectedToDB": "Verbunden mit MongoDB!",
-		"errorMessage": "TBeim Ausführen dieses Befehls ist ein Fehler aufgetreten.",
+		"errorMessage": "Teim Ausführen dieses Befehls ist ein Fehler aufgetreten.",
     "noBotToken": "Die .env-Datei enthält kein DISCORD_TOKEN oder es ist falsch. Bitte versuche es erneut!"
 	},
-	"language": {
-    "description": "Ändern Sie die Sprache, die Emily auf Ihrem Server verwendet.",
-    "response": "Die Sprache für diesen Server wurde auf `{lang}` eingestellt."
-  },
 	"pat": {
-		"description": "Streichle jemanden, der es braucht :)",
+		"description": "Jemanden streicheln, der es braucht :)",
 		"option1": "Der Benutzer, den Sie streicheln möchten.",
-		"response": "<@patterId>** hat **<@{pattedId}> **einen Klaps gegeben!**"
+		"userNotExist": "<@{victim}> scheint nicht auf dem Server zu sein oder es ist ein anderer Fehler aufgetreten.",
+		"cantpatBot": "Ahh! Du kannst mich nicht streicheln! D:",
+		"cantpatYourself": "Aww... ich denke, <@{executor}> braucht ein paar Streicheleinheiten...",
+		"response": "<@{executor}>** hat **<@{victim}> **einen Klaps gegeben!**"
 	},
 	"ping": {
 		"description": "Pong! Testen Sie Emilys Reaktionszeit und stellen Sie sicher, dass sie online ist.",

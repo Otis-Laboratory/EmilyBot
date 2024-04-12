@@ -4,7 +4,9 @@ import { join } from "path";
 
 i18n.configure({
   locales: [
-    "en"
+    "en",
+    "es",
+    "de"
   ],
   directory: join(__dirname, "..", "lang"),
   defaultLocale: "en",

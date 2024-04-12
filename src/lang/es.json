@@ -1,18 +1,17 @@
 {
-  "common": {
-    "cooldownMessage": "`{name}` está en tiempo de reutilización durante `{time}` segundos más.",
-    "connectedToDB": "¡Conectado a MongoDB!",
+	"common": {
+		"cooldownMessage": "`{name}` está en tiempo de reutilización durante `{time}` segundos más.",
+		"connectedToDB": "¡Conectado a MongoDB!",
 		"errorMessage": "Hubo un error al ejecutar ese comando.",
-    "noBotToken": "No hay un DISCORD_TOKEN en el archivo .env o es incorrecto. ¡Inténtalo de nuevo!"
+		"noBotToken": "No hay un DISCORD_TOKEN en el archivo .env o es incorrecto. ¡Inténtalo de nuevo!"
 	},
-	"language": {
-    "description": "Cambia el idioma que usa Emily en tu servidor.",
-    "response": "El idioma de este servidor se ha establecido en `{lang}`."
-  },
 	"pat": {
-		"description": "Dale palmadita a alguien que lo necesite :)",
+		"description": "Acaricia a alguien que lo necesite :)",
 		"option1": "El usuario al que quieres darle una palmadita.",
-		"response": "<@patterId>** le dio **<@{pattedId}> **¡una palmadita!**"
+		"userNotExist": "<@{victim}> no parece estar en el servidor o ocurrió otro error.",
+		"cantpatBot": "¡Ahh! ¡No puedes acariciarme! D:",
+		"cantpatYourself": "Aww... creo que <@{executor}> necesita algunas palmaditas...",
+		"response": "**¡**<@{executor}>** le dio a **<@{victim}> **una palmadita!**"
 	},
 	"ping": {
 		"description": "¡Apestar! Pruebe el tiempo de respuesta de Emily y asegúrese de que esté en línea.",

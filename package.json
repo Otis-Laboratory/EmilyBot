@@ -25,5 +25,8 @@
     "nodemon": "^3.1.0",
     "prettier": "^3.2.5",
     "ts-node": "^10.9.2"
+  },
+  "optionalDependencies": {
+    "axios": "^1.6.8"
   }
 }

@@ -11,6 +11,10 @@
   },
   "pat": {
 		"description": "",
+		"option1": "",
+		"userNotExist": "",
+		"cantpatBot": "",
+		"cantpatYourself": "",
 		"response": ""
 	},
   "ping": {
